@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <Group
+      location = "group:Classes"
+      name = "Classes">
+      <FileRef
+         location = "group:BRJPopoverPicker.h">
+      </FileRef>
+      <FileRef
+         location = "group:BRJPopoverPicker.m">
+      </FileRef>
+      <FileRef
+         location = "group:BRJPopoverPickerDataSource.h">
+      </FileRef>
+      <FileRef
+         location = "group:BRJPopoverPickerDelegate.h">
+      </FileRef>
+   </Group>
+   <FileRef
+      location = "group:Example/BRJPopoverPicker Example/BRJPopoverPicker Example.xcodeproj">
+   </FileRef>
+</Workspace>

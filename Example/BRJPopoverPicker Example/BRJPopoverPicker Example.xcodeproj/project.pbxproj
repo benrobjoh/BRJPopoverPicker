@@ -1,0 +1,455 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EAFC6F1B18E88FDB00953708 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAFC6F1A18E88FDB00953708 /* Foundation.framework */; };
+		EAFC6F1D18E88FDB00953708 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAFC6F1C18E88FDB00953708 /* CoreGraphics.framework */; };
+		EAFC6F1F18E88FDB00953708 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAFC6F1E18E88FDB00953708 /* UIKit.framework */; };
+		EAFC6F2518E88FDB00953708 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EAFC6F2318E88FDB00953708 /* InfoPlist.strings */; };
+		EAFC6F2718E88FDB00953708 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EAFC6F2618E88FDB00953708 /* main.m */; };
+		EAFC6F2B18E88FDB00953708 /* BRJAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EAFC6F2A18E88FDB00953708 /* BRJAppDelegate.m */; };
+		EAFC6F2D18E88FDB00953708 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAFC6F2C18E88FDB00953708 /* Images.xcassets */; };
+		EAFC6F3418E88FDB00953708 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAFC6F3318E88FDB00953708 /* XCTest.framework */; };
+		EAFC6F3518E88FDB00953708 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAFC6F1A18E88FDB00953708 /* Foundation.framework */; };
+		EAFC6F3618E88FDB00953708 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAFC6F1E18E88FDB00953708 /* UIKit.framework */; };
+		EAFC6F3E18E88FDB00953708 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EAFC6F3C18E88FDB00953708 /* InfoPlist.strings */; };
+		EAFC6F4018E88FDB00953708 /* BRJPopoverPicker_ExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EAFC6F3F18E88FDB00953708 /* BRJPopoverPicker_ExampleTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EAFC6F3718E88FDB00953708 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EAFC6F0F18E88FDB00953708 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EAFC6F1618E88FDB00953708;
+			remoteInfo = "BRJPopoverPicker Example";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EAFC6F1718E88FDB00953708 /* BRJPopoverPicker Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BRJPopoverPicker Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EAFC6F1A18E88FDB00953708 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		EAFC6F1C18E88FDB00953708 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		EAFC6F1E18E88FDB00953708 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		EAFC6F2218E88FDB00953708 /* BRJPopoverPicker Example-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BRJPopoverPicker Example-Info.plist"; sourceTree = "<group>"; };
+		EAFC6F2418E88FDB00953708 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		EAFC6F2618E88FDB00953708 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EAFC6F2818E88FDB00953708 /* BRJPopoverPicker Example-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BRJPopoverPicker Example-Prefix.pch"; sourceTree = "<group>"; };
+		EAFC6F2918E88FDB00953708 /* BRJAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BRJAppDelegate.h; sourceTree = "<group>"; };
+		EAFC6F2A18E88FDB00953708 /* BRJAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BRJAppDelegate.m; sourceTree = "<group>"; };
+		EAFC6F2C18E88FDB00953708 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		EAFC6F3218E88FDB00953708 /* BRJPopoverPicker ExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "BRJPopoverPicker ExampleTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EAFC6F3318E88FDB00953708 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		EAFC6F3B18E88FDB00953708 /* BRJPopoverPicker ExampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BRJPopoverPicker ExampleTests-Info.plist"; sourceTree = "<group>"; };
+		EAFC6F3D18E88FDB00953708 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		EAFC6F3F18E88FDB00953708 /* BRJPopoverPicker_ExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BRJPopoverPicker_ExampleTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EAFC6F1418E88FDB00953708 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAFC6F1D18E88FDB00953708 /* CoreGraphics.framework in Frameworks */,
+				EAFC6F1F18E88FDB00953708 /* UIKit.framework in Frameworks */,
+				EAFC6F1B18E88FDB00953708 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAFC6F2F18E88FDB00953708 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAFC6F3418E88FDB00953708 /* XCTest.framework in Frameworks */,
+				EAFC6F3618E88FDB00953708 /* UIKit.framework in Frameworks */,
+				EAFC6F3518E88FDB00953708 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EAFC6F0E18E88FDB00953708 = {
+			isa = PBXGroup;
+			children = (
+				EAFC6F2018E88FDB00953708 /* BRJPopoverPicker Example */,
+				EAFC6F3918E88FDB00953708 /* BRJPopoverPicker ExampleTests */,
+				EAFC6F1918E88FDB00953708 /* Frameworks */,
+				EAFC6F1818E88FDB00953708 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EAFC6F1818E88FDB00953708 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EAFC6F1718E88FDB00953708 /* BRJPopoverPicker Example.app */,
+				EAFC6F3218E88FDB00953708 /* BRJPopoverPicker ExampleTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EAFC6F1918E88FDB00953708 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EAFC6F1A18E88FDB00953708 /* Foundation.framework */,
+				EAFC6F1C18E88FDB00953708 /* CoreGraphics.framework */,
+				EAFC6F1E18E88FDB00953708 /* UIKit.framework */,
+				EAFC6F3318E88FDB00953708 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EAFC6F2018E88FDB00953708 /* BRJPopoverPicker Example */ = {
+			isa = PBXGroup;
+			children = (
+				EAFC6F2918E88FDB00953708 /* BRJAppDelegate.h */,
+				EAFC6F2A18E88FDB00953708 /* BRJAppDelegate.m */,
+				EAFC6F2C18E88FDB00953708 /* Images.xcassets */,
+				EAFC6F2118E88FDB00953708 /* Supporting Files */,
+			);
+			path = "BRJPopoverPicker Example";
+			sourceTree = "<group>";
+		};
+		EAFC6F2118E88FDB00953708 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EAFC6F2218E88FDB00953708 /* BRJPopoverPicker Example-Info.plist */,
+				EAFC6F2318E88FDB00953708 /* InfoPlist.strings */,
+				EAFC6F2618E88FDB00953708 /* main.m */,
+				EAFC6F2818E88FDB00953708 /* BRJPopoverPicker Example-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EAFC6F3918E88FDB00953708 /* BRJPopoverPicker ExampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				EAFC6F3F18E88FDB00953708 /* BRJPopoverPicker_ExampleTests.m */,
+				EAFC6F3A18E88FDB00953708 /* Supporting Files */,
+			);
+			path = "BRJPopoverPicker ExampleTests";
+			sourceTree = "<group>";
+		};
+		EAFC6F3A18E88FDB00953708 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EAFC6F3B18E88FDB00953708 /* BRJPopoverPicker ExampleTests-Info.plist */,
+				EAFC6F3C18E88FDB00953708 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EAFC6F1618E88FDB00953708 /* BRJPopoverPicker Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EAFC6F4318E88FDB00953708 /* Build configuration list for PBXNativeTarget "BRJPopoverPicker Example" */;
+			buildPhases = (
+				EAFC6F1318E88FDB00953708 /* Sources */,
+				EAFC6F1418E88FDB00953708 /* Frameworks */,
+				EAFC6F1518E88FDB00953708 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "BRJPopoverPicker Example";
+			productName = "BRJPopoverPicker Example";
+			productReference = EAFC6F1718E88FDB00953708 /* BRJPopoverPicker Example.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EAFC6F3118E88FDB00953708 /* BRJPopoverPicker ExampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EAFC6F4618E88FDB00953708 /* Build configuration list for PBXNativeTarget "BRJPopoverPicker ExampleTests" */;
+			buildPhases = (
+				EAFC6F2E18E88FDB00953708 /* Sources */,
+				EAFC6F2F18E88FDB00953708 /* Frameworks */,
+				EAFC6F3018E88FDB00953708 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EAFC6F3818E88FDB00953708 /* PBXTargetDependency */,
+			);
+			name = "BRJPopoverPicker ExampleTests";
+			productName = "BRJPopoverPicker ExampleTests";
+			productReference = EAFC6F3218E88FDB00953708 /* BRJPopoverPicker ExampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EAFC6F0F18E88FDB00953708 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = BRJ;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = Bixelcog;
+				TargetAttributes = {
+					EAFC6F3118E88FDB00953708 = {
+						TestTargetID = EAFC6F1618E88FDB00953708;
+					};
+				};
+			};
+			buildConfigurationList = EAFC6F1218E88FDB00953708 /* Build configuration list for PBXProject "BRJPopoverPicker Example" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = EAFC6F0E18E88FDB00953708;
+			productRefGroup = EAFC6F1818E88FDB00953708 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EAFC6F1618E88FDB00953708 /* BRJPopoverPicker Example */,
+				EAFC6F3118E88FDB00953708 /* BRJPopoverPicker ExampleTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EAFC6F1518E88FDB00953708 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAFC6F2518E88FDB00953708 /* InfoPlist.strings in Resources */,
+				EAFC6F2D18E88FDB00953708 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAFC6F3018E88FDB00953708 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAFC6F3E18E88FDB00953708 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EAFC6F1318E88FDB00953708 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAFC6F2718E88FDB00953708 /* main.m in Sources */,
+				EAFC6F2B18E88FDB00953708 /* BRJAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAFC6F2E18E88FDB00953708 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAFC6F4018E88FDB00953708 /* BRJPopoverPicker_ExampleTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EAFC6F3818E88FDB00953708 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EAFC6F1618E88FDB00953708 /* BRJPopoverPicker Example */;
+			targetProxy = EAFC6F3718E88FDB00953708 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EAFC6F2318E88FDB00953708 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EAFC6F2418E88FDB00953708 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		EAFC6F3C18E88FDB00953708 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EAFC6F3D18E88FDB00953708 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EAFC6F4118E88FDB00953708 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		EAFC6F4218E88FDB00953708 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EAFC6F4418E88FDB00953708 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BRJPopoverPicker Example/BRJPopoverPicker Example-Prefix.pch";
+				INFOPLIST_FILE = "BRJPopoverPicker Example/BRJPopoverPicker Example-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		EAFC6F4518E88FDB00953708 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BRJPopoverPicker Example/BRJPopoverPicker Example-Prefix.pch";
+				INFOPLIST_FILE = "BRJPopoverPicker Example/BRJPopoverPicker Example-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		EAFC6F4718E88FDB00953708 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/BRJPopoverPicker Example.app/BRJPopoverPicker Example";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BRJPopoverPicker Example/BRJPopoverPicker Example-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "BRJPopoverPicker ExampleTests/BRJPopoverPicker ExampleTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		EAFC6F4818E88FDB00953708 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/BRJPopoverPicker Example.app/BRJPopoverPicker Example";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BRJPopoverPicker Example/BRJPopoverPicker Example-Prefix.pch";
+				INFOPLIST_FILE = "BRJPopoverPicker ExampleTests/BRJPopoverPicker ExampleTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EAFC6F1218E88FDB00953708 /* Build configuration list for PBXProject "BRJPopoverPicker Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EAFC6F4118E88FDB00953708 /* Debug */,
+				EAFC6F4218E88FDB00953708 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EAFC6F4318E88FDB00953708 /* Build configuration list for PBXNativeTarget "BRJPopoverPicker Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EAFC6F4418E88FDB00953708 /* Debug */,
+				EAFC6F4518E88FDB00953708 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		EAFC6F4618E88FDB00953708 /* Build configuration list for PBXNativeTarget "BRJPopoverPicker ExampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EAFC6F4718E88FDB00953708 /* Debug */,
+				EAFC6F4818E88FDB00953708 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EAFC6F0F18E88FDB00953708 /* Project object */;
+}

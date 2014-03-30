@@ -1,6 +1,6 @@
 //
-//  BRJPopoverPickerController_ExampleTests.m
-//  BRJPopoverPickerController ExampleTests
+//  BRJPopoverPicker_ExampleTests.m
+//  BRJPopoverPicker ExampleTests
 //
 //  Created by Ben Johnson on 3/30/14.
 //  Copyright (c) 2014 Bixelcog. All rights reserved.
@@ -8,11 +8,11 @@
 
 #import <XCTest/XCTest.h>
 
-@interface BRJPopoverPickerController_ExampleTests : XCTestCase
+@interface BRJPopoverPicker_ExampleTests : XCTestCase
 
 @end
 
-@implementation BRJPopoverPickerController_ExampleTests
+@implementation BRJPopoverPicker_ExampleTests
 
 - (void)setUp
 {

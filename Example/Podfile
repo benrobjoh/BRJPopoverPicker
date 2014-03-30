@@ -1,1 +1,1 @@
-pod "BRJPopoverPickerController", :path => "../BRJPopoverPickerController.podspec"
+pod "BRJPopoverPicker", :path => "../BRJPopoverPicker.podspec"
