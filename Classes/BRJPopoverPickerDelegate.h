@@ -7,7 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
+@class BRJPopoverPicker;
 
 @protocol BRJPopoverPickerDelegate <NSObject>
-
+@optional
+- (void)popoverPicker:(BRJPopoverPicker *)popoverPicker didSelectRowWithTitle:(NSString *)selectedTitle atIndexPath:(NSIndexPath *)selectedIndexPath;
 @end

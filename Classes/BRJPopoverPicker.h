@@ -29,4 +29,8 @@
 @interface BRJPopoverPicker : NSObject
 @property (weak, nonatomic) id<BRJPopoverPickerDelegate> delegate;
 @property (weak, nonatomic) id<BRJPopoverPickerDataSource> dataSource;
+@property (copy, nonatomic) NSString *title;
+- (void)presentPopoverPickerFromRect:(CGRect)rect inView:(UIView *)view permittedArrowDirections:(UIPopoverArrowDirection)arrowDirections animated:(BOOL)animated;
+- (void)presentPopoverPickerFromBarButtonItem:(UIBarButtonItem *)item permittedArrowDirections:(UIPopoverArrowDirection)arrowDirections animated:(BOOL)animated;
+- (void)dismissPopoverPickerAnimated:(BOOL)animated;
 @end

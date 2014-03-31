@@ -18,6 +18,9 @@
       </FileRef>
    </Group>
    <FileRef
-      location = "group:Example/BRJPopoverPicker Example/BRJPopoverPicker Example.xcodeproj">
+      location = "group:Example/BRJPopoverPicker Example.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Example/Pods/Pods.xcodeproj">
    </FileRef>
 </Workspace>

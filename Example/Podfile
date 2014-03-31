@@ -1,1 +1,4 @@
+xcodeproj 'BRJPopoverPicker Example'
+workspace '../BRJPopoverPicker'
+
 pod "BRJPopoverPicker", :path => "../BRJPopoverPicker.podspec"

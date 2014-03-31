@@ -24,10 +24,85 @@
 
 #import "BRJPopoverPicker.h"
 
-@interface BRJPopoverPicker ()
+static NSString * const BRJPopoverPickerCellReuseIdentifier = @"BRJPopoverPickerCellReuseIdentifier";
+
+@interface BRJPopoverPicker () <UITableViewDataSource, UITableViewDelegate, UIPopoverControllerDelegate>
 @property (strong, nonatomic) UIPopoverController *popoverController;
 @end
 
 @implementation BRJPopoverPicker
+- (instancetype)init {
+    self = [super init];
+    if (self) {
 
+    }
+    return self;
+}
+
+#pragma mark - Configuration
+- (void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath {
+    NSString *title = [self.dataSource popoverPicker:self titleForRowAtIndexPath:indexPath];
+    cell.textLabel.text = title;
+}
+
+- (void)configurePopoverController {
+    self.popoverController = ({
+        UITableViewController *tableViewController = [[UITableViewController alloc] initWithStyle:UITableViewStylePlain];
+        tableViewController.tableView.dataSource = self;
+        tableViewController.tableView.delegate = self;
+        tableViewController.title = self.title;
+        
+        UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:tableViewController];
+        
+        UIPopoverController *popoverController = [[UIPopoverController alloc] initWithContentViewController:navigationController];
+        popoverController;
+    });
+}
+
+#pragma mark - Presentation and Dismissal
+- (void)presentPopoverPickerFromRect:(CGRect)rect inView:(UIView *)view permittedArrowDirections:(UIPopoverArrowDirection)arrowDirections animated:(BOOL)animated {
+    [self configurePopoverController];
+    [self.popoverController presentPopoverFromRect:rect inView:view permittedArrowDirections:arrowDirections animated:animated];
+}
+
+- (void)presentPopoverPickerFromBarButtonItem:(UIBarButtonItem *)item permittedArrowDirections:(UIPopoverArrowDirection)arrowDirections animated:(BOOL)animated {
+    [self configurePopoverController];
+    [self.popoverController presentPopoverFromBarButtonItem:item permittedArrowDirections:arrowDirections animated:animated];
+}
+
+- (void)dismissPopoverPickerAnimated:(BOOL)animated {
+    [self.popoverController dismissPopoverAnimated:animated];
+    self.popoverController = nil;
+}
+
+#pragma mark - Protocol: UITableViewDataSource
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    return 1;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return [self.dataSource numberOfRowsInPopoverPicker:self];
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:BRJPopoverPickerCellReuseIdentifier forIndexPath:indexPath];
+    [self configureCell:cell atIndexPath:indexPath];
+    
+    return cell;
+}
+
+#pragma mark - Protocol: UITableViewDelegate
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    if ([self.delegate respondsToSelector:@selector(popoverPicker:didSelectRowWithTitle:atIndexPath:)]) {
+        NSString *title = [self.dataSource popoverPicker:self titleForRowAtIndexPath:indexPath];
+        [self.delegate popoverPicker:self didSelectRowWithTitle:title atIndexPath:indexPath];
+    }
+    
+    [self dismissPopoverPickerAnimated:YES];
+}
+
+#pragma mark - Protocol: UIPopoverControllerDelegate
+- (void)popoverControllerDidDismissPopover:(UIPopoverController *)popoverController {
+    self.popoverController = nil;
+}
 @end
