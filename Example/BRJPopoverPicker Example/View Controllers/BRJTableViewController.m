@@ -13,6 +13,7 @@
 @interface BRJTableViewController () <BRJPopoverPickerDataSource, BRJPopoverPickerDelegate>
 @property (strong, nonatomic) NSArray *teamNames;
 @property (strong, nonatomic) BRJPopoverPicker *popoverPicker;
+@property (assign, nonatomic) NSInteger selectedTeam;
 @end
 
 @implementation BRJTableViewController
@@ -28,9 +29,13 @@
             BRJPopoverPicker *popoverPicker = [[BRJPopoverPicker alloc] init];
             popoverPicker.delegate = self;
             popoverPicker.dataSource = self;
+            popoverPicker.title = NSLocalizedString(@"popover.title", @"Baseball");
             popoverPicker;
         });
         
+        _selectedTeam = -1;
+        
+        self.title = NSLocalizedString(@"main.title", @"Favorite Team");
     }
     return self;
 }
@@ -72,6 +77,9 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     CGRect frame = [tableView rectForRowAtIndexPath:indexPath];
     if (!CGRectEqualToRect(frame, CGRectZero)) {
+        if (self.selectedTeam >= 0) {
+            [self.popoverPicker selectRowAtIndex:self.selectedTeam];
+        }
         [self.popoverPicker presentPopoverPickerFromRect:frame inView:tableView permittedArrowDirections:UIPopoverArrowDirectionAny animated:YES];
     }
 }
@@ -88,6 +96,7 @@
 #pragma mark - Protocol: BRJPopoverPickerDelegate
 - (void)popoverPicker:(BRJPopoverPicker *)popoverPicker didSelectRowWithTitle:(NSString *)selectedTitle atIndex:(NSUInteger)selectedIndex {
     UITableViewCell *cell = [self.tableView cellForRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0]];
+    self.selectedTeam = selectedIndex;
     cell.detailTextLabel.text = selectedTitle;
 }
 @end

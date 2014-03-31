@@ -1,13 +1,8 @@
 Pod::Spec.new do |s|
   s.name             = "BRJPopoverPicker"
   s.version          = "0.1.0"
-  s.summary          = "A short description of BRJPopoverPicker."
-  s.description      = <<-DESC
-                       An optional longer description of BRJPopoverPicker
+  s.summary          = "BRJPopoverPicker presents a table inside a popover that allows the user to select one item."
 
-                       * Markdown format.
-                       * Don't worry about the indent, we strip it!
-                       DESC
   s.homepage         = "https://github.com/benrobjoh/BRJPopoverPicker"
   s.license          = 'MIT'
   s.author           = { "Ben Johnson" => "ben@benrobjoh.com" }

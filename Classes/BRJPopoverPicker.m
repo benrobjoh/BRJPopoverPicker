@@ -48,15 +48,6 @@ static NSString * const BRJPopoverPickerCellReuseIdentifier = @"BRJPopoverPicker
 
 - (void)configurePopoverController {
     self.popoverController = ({
-        self.tableViewController = ({
-            UITableViewController *tableViewController = [[UITableViewController alloc] initWithStyle:UITableViewStylePlain];
-            tableViewController.tableView.dataSource = self;
-            tableViewController.tableView.delegate = self;
-            [tableViewController.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:BRJPopoverPickerCellReuseIdentifier];
-            tableViewController.title = self.title;
-            tableViewController;
-        });
-        
         UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:self.tableViewController];
         
         UIPopoverController *popoverController = [[UIPopoverController alloc] initWithContentViewController:navigationController];
@@ -70,7 +61,6 @@ static NSString * const BRJPopoverPickerCellReuseIdentifier = @"BRJPopoverPicker
 
 - (void)invalidatePopoverPicker {
     self.popoverController = nil;
-    self.tableViewController = nil;
 }
 
 #pragma mark - Convenience
@@ -79,6 +69,22 @@ static NSString * const BRJPopoverPickerCellReuseIdentifier = @"BRJPopoverPicker
 }
 - (NSUInteger)numberOfRows {
     return [self.dataSource numberOfRowsInPopoverPicker:self];
+}
+
+#pragma mark - Getter
+- (UITableViewController *)tableViewController {
+    if (!_tableViewController) {
+        _tableViewController = ({
+            UITableViewController *tableViewController = [[UITableViewController alloc] initWithStyle:UITableViewStylePlain];
+            tableViewController.tableView.dataSource = self;
+            tableViewController.tableView.delegate = self;
+            [tableViewController.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:BRJPopoverPickerCellReuseIdentifier];
+            tableViewController.clearsSelectionOnViewWillAppear = NO;
+            tableViewController.title = self.title;
+            tableViewController;
+        });
+    }
+    return _tableViewController;
 }
 
 #pragma mark - Presentation and Dismissal
