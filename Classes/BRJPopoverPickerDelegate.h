@@ -11,5 +11,5 @@
 
 @protocol BRJPopoverPickerDelegate <NSObject>
 @optional
-- (void)popoverPicker:(BRJPopoverPicker *)popoverPicker didSelectRowWithTitle:(NSString *)selectedTitle atIndexPath:(NSIndexPath *)selectedIndexPath;
+- (void)popoverPicker:(BRJPopoverPicker *)popoverPicker didSelectRowWithTitle:(NSString *)selectedTitle atIndex:(NSUInteger)selectedIndex;
 @end

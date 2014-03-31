@@ -30,7 +30,11 @@
 @property (weak, nonatomic) id<BRJPopoverPickerDelegate> delegate;
 @property (weak, nonatomic) id<BRJPopoverPickerDataSource> dataSource;
 @property (copy, nonatomic) NSString *title;
+- (NSString *)titleForRowAtIndex:(NSUInteger)index;
+- (NSUInteger)numberOfRows;
+- (void)selectRowAtIndex:(NSUInteger)index;
 - (void)presentPopoverPickerFromRect:(CGRect)rect inView:(UIView *)view permittedArrowDirections:(UIPopoverArrowDirection)arrowDirections animated:(BOOL)animated;
 - (void)presentPopoverPickerFromBarButtonItem:(UIBarButtonItem *)item permittedArrowDirections:(UIPopoverArrowDirection)arrowDirections animated:(BOOL)animated;
 - (void)dismissPopoverPickerAnimated:(BOOL)animated;
+
 @end

@@ -11,7 +11,7 @@
 
 @protocol BRJPopoverPickerDataSource <NSObject>
 @required
-- (NSString *)popoverPicker:(BRJPopoverPicker *)popoverPicker titleForRowAtIndexPath:(NSIndexPath *)indexPath;
-- (NSInteger)numberOfRowsInPopoverPicker:(BRJPopoverPicker *)popoverPicker;
+- (NSString *)popoverPicker:(BRJPopoverPicker *)popoverPicker titleForRowAtIndex:(NSUInteger)index;
+- (NSUInteger)numberOfRowsInPopoverPicker:(BRJPopoverPicker *)popoverPicker;
 
 @end

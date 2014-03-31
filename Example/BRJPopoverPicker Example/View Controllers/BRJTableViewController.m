@@ -77,16 +77,16 @@
 }
 
 #pragma mark - Protocol: BRJPopoverPickerDataSource
-- (NSString *)popoverPicker:(BRJPopoverPicker *)popoverPicker titleForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return self.teamNames[indexPath.row];
+- (NSString *)popoverPicker:(BRJPopoverPicker *)popoverPicker titleForRowAtIndex:(NSUInteger)index {
+    return self.teamNames[index];
 }
 
-- (NSInteger)numberOfRowsInPopoverPicker:(BRJPopoverPicker *)popoverPicker {
+- (NSUInteger)numberOfRowsInPopoverPicker:(BRJPopoverPicker *)popoverPicker {
     return [self.teamNames count];
 }
 
 #pragma mark - Protocol: BRJPopoverPickerDelegate
-- (void)popoverPicker:(BRJPopoverPicker *)popoverPicker didSelectRowWithTitle:(NSString *)selectedTitle atIndexPath:(NSIndexPath *)selectedIndexPath {
+- (void)popoverPicker:(BRJPopoverPicker *)popoverPicker didSelectRowWithTitle:(NSString *)selectedTitle atIndex:(NSUInteger)selectedIndex {
     UITableViewCell *cell = [self.tableView cellForRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0]];
     cell.detailTextLabel.text = selectedTitle;
 }

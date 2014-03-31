@@ -28,6 +28,7 @@ static NSString * const BRJPopoverPickerCellReuseIdentifier = @"BRJPopoverPicker
 
 @interface BRJPopoverPicker () <UITableViewDataSource, UITableViewDelegate, UIPopoverControllerDelegate>
 @property (strong, nonatomic) UIPopoverController *popoverController;
+@property (strong, nonatomic) UITableViewController *tableViewController;
 @end
 
 @implementation BRJPopoverPicker
@@ -41,23 +42,43 @@ static NSString * const BRJPopoverPickerCellReuseIdentifier = @"BRJPopoverPicker
 
 #pragma mark - Configuration
 - (void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath {
-    NSString *title = [self.dataSource popoverPicker:self titleForRowAtIndexPath:indexPath];
+    NSString *title = [self titleForRowAtIndex:indexPath.row];
     cell.textLabel.text = title;
 }
 
 - (void)configurePopoverController {
     self.popoverController = ({
-        UITableViewController *tableViewController = [[UITableViewController alloc] initWithStyle:UITableViewStylePlain];
-        tableViewController.tableView.dataSource = self;
-        tableViewController.tableView.delegate = self;
-        [tableViewController.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:BRJPopoverPickerCellReuseIdentifier];
-        tableViewController.title = self.title;
+        self.tableViewController = ({
+            UITableViewController *tableViewController = [[UITableViewController alloc] initWithStyle:UITableViewStylePlain];
+            tableViewController.tableView.dataSource = self;
+            tableViewController.tableView.delegate = self;
+            [tableViewController.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:BRJPopoverPickerCellReuseIdentifier];
+            tableViewController.title = self.title;
+            tableViewController;
+        });
         
-        UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:tableViewController];
+        UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:self.tableViewController];
         
         UIPopoverController *popoverController = [[UIPopoverController alloc] initWithContentViewController:navigationController];
         popoverController;
     });
+}
+
+- (void)selectRowAtIndex:(NSUInteger)index {
+    [self.tableViewController.tableView selectRowAtIndexPath:[NSIndexPath indexPathForRow:index inSection:0] animated:YES scrollPosition:UITableViewScrollPositionTop];
+}
+
+- (void)invalidatePopoverPicker {
+    self.popoverController = nil;
+    self.tableViewController = nil;
+}
+
+#pragma mark - Convenience
+- (NSString *)titleForRowAtIndex:(NSUInteger)index {
+    return [self.dataSource popoverPicker:self titleForRowAtIndex:index];;
+}
+- (NSUInteger)numberOfRows {
+    return [self.dataSource numberOfRowsInPopoverPicker:self];
 }
 
 #pragma mark - Presentation and Dismissal
@@ -73,7 +94,7 @@ static NSString * const BRJPopoverPickerCellReuseIdentifier = @"BRJPopoverPicker
 
 - (void)dismissPopoverPickerAnimated:(BOOL)animated {
     [self.popoverController dismissPopoverAnimated:animated];
-    self.popoverController = nil;
+    [self invalidatePopoverPicker];
 }
 
 #pragma mark - Protocol: UITableViewDataSource
@@ -82,7 +103,7 @@ static NSString * const BRJPopoverPickerCellReuseIdentifier = @"BRJPopoverPicker
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return [self.dataSource numberOfRowsInPopoverPicker:self];
+    return [self numberOfRows];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -94,9 +115,9 @@ static NSString * const BRJPopoverPickerCellReuseIdentifier = @"BRJPopoverPicker
 
 #pragma mark - Protocol: UITableViewDelegate
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    if ([self.delegate respondsToSelector:@selector(popoverPicker:didSelectRowWithTitle:atIndexPath:)]) {
-        NSString *title = [self.dataSource popoverPicker:self titleForRowAtIndexPath:indexPath];
-        [self.delegate popoverPicker:self didSelectRowWithTitle:title atIndexPath:indexPath];
+    if ([self.delegate respondsToSelector:@selector(popoverPicker:didSelectRowWithTitle:atIndex:)]) {
+        NSString *title = [self.dataSource popoverPicker:self titleForRowAtIndex:indexPath.row];
+        [self.delegate popoverPicker:self didSelectRowWithTitle:title atIndex:indexPath.row];
     }
     
     [self dismissPopoverPickerAnimated:YES];
@@ -104,6 +125,6 @@ static NSString * const BRJPopoverPickerCellReuseIdentifier = @"BRJPopoverPicker
 
 #pragma mark - Protocol: UIPopoverControllerDelegate
 - (void)popoverControllerDidDismissPopover:(UIPopoverController *)popoverController {
-    self.popoverController = nil;
+    [self invalidatePopoverPicker];
 }
 @end
