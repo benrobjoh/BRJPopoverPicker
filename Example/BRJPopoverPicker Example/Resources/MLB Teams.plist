@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<string>Arizona Diamondbacks</string>
+    <string>Atlanta Braves</string>
+    <string>Baltimore Orioles</string>
+    <string>Boston Red Sox</string>
+    <string>Chicago Cubs</string>
+    <string>Chicago White Sox</string>
+    <string>Cinncinnati Reds</string>
+    <string>Cleveland Indians</string>
+    <string>Colorado Rockies</string>
+    <string>Detroit Tigers</string>
+    <string>Houston Astros</string>
+    <string>Kansas City Royals</string>
+    <string>Los Angeles Angels of Anaheim</string>
+    <string>Los Angeles Dodgers</string>
+    <string>Miami Marlins</string>
+    <string>Milwaukee Brewers</string>
+    <string>Minnesota Twins</string>
+    <string>New York Mets</string>
+    <string>New York Yankees</string>
+    <string>Oakland Athletics</string>
+    <string>Philadelphia Phillies</string>
+    <string>Pittsburgh Pirates</string>
+    <string>San Diego Padres</string>
+    <string>San Francisco Giants</string>
+    <string>Seattle Mariners</string>
+    <string>St. Louis Cardinals</string>
+    <string>Tampa Bay Rays</string>
+    <string>Texas Rangers</string>
+    <string>Toronto Blue Jays</string>
+    <string>Washington Nationals</string>
+</array>
+</plist>

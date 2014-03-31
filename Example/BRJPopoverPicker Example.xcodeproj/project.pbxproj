@@ -1,1016 +1,561 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
-	<key>archiveVersion</key>
-	<string>1</string>
-	<key>classes</key>
-	<dict/>
-	<key>objectVersion</key>
-	<string>46</string>
-	<key>objects</key>
-	<dict>
-		<key>0F25900BAFBF4A7FA89ECFD4</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>archive.ar</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>libPods.a</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>13BC3C8BE50243409ADE7A9A</key>
-		<dict>
-			<key>fileRef</key>
-			<string>0F25900BAFBF4A7FA89ECFD4</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>7453F524CBA644DB8716A2F8</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Pods.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C8575EF23D2C4C7FB68AFF67</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Copy Pods Resources</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>"${SRCROOT}/Pods/Pods-resources.sh"
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>EAC1831D18E89B3900643C2C</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>EAC1832F18E89B3900643C2C</string>
-				<string>EAC1834818E89B3900643C2C</string>
-				<string>EAC1832818E89B3900643C2C</string>
-				<string>EAC1832718E89B3900643C2C</string>
-				<string>7453F524CBA644DB8716A2F8</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EAC1831E18E89B3900643C2C</key>
-		<dict>
-			<key>attributes</key>
-			<dict>
-				<key>CLASSPREFIX</key>
-				<string>BRJ</string>
-				<key>LastUpgradeCheck</key>
-				<string>0510</string>
-				<key>ORGANIZATIONNAME</key>
-				<string>Bixelcog</string>
-				<key>TargetAttributes</key>
-				<dict>
-					<key>EAC1834018E89B3900643C2C</key>
-					<dict>
-						<key>TestTargetID</key>
-						<string>EAC1832518E89B3900643C2C</string>
-					</dict>
-				</dict>
-			</dict>
-			<key>buildConfigurationList</key>
-			<string>EAC1832118E89B3900643C2C</string>
-			<key>compatibilityVersion</key>
-			<string>Xcode 3.2</string>
-			<key>developmentRegion</key>
-			<string>English</string>
-			<key>hasScannedForEncodings</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXProject</string>
-			<key>knownRegions</key>
-			<array>
-				<string>en</string>
-			</array>
-			<key>mainGroup</key>
-			<string>EAC1831D18E89B3900643C2C</string>
-			<key>productRefGroup</key>
-			<string>EAC1832718E89B3900643C2C</string>
-			<key>projectDirPath</key>
-			<string></string>
-			<key>projectReferences</key>
-			<array/>
-			<key>projectRoot</key>
-			<string></string>
-			<key>targets</key>
-			<array>
-				<string>EAC1832518E89B3900643C2C</string>
-				<string>EAC1834018E89B3900643C2C</string>
-			</array>
-		</dict>
-		<key>EAC1832118E89B3900643C2C</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>EAC1835018E89B3900643C2C</string>
-				<string>EAC1835118E89B3900643C2C</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>EAC1832218E89B3900643C2C</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>EAC1833618E89B3900643C2C</string>
-				<string>EAC1833A18E89B3900643C2C</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>EAC1832318E89B3900643C2C</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>EAC1832C18E89B3900643C2C</string>
-				<string>EAC1832E18E89B3900643C2C</string>
-				<string>EAC1832A18E89B3900643C2C</string>
-				<string>13BC3C8BE50243409ADE7A9A</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>EAC1832418E89B3900643C2C</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>EAC1833418E89B3900643C2C</string>
-				<string>EAC1833C18E89B3900643C2C</string>
-			</array>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>EAC1832518E89B3900643C2C</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>EAC1835218E89B3900643C2C</string>
-			<key>buildPhases</key>
-			<array>
-				<string>F023E974B4C84367809EBA24</string>
-				<string>EAC1832218E89B3900643C2C</string>
-				<string>EAC1832318E89B3900643C2C</string>
-				<string>EAC1832418E89B3900643C2C</string>
-				<string>C8575EF23D2C4C7FB68AFF67</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>BRJPopoverPicker Example</string>
-			<key>productName</key>
-			<string>BRJPopoverPicker Example</string>
-			<key>productReference</key>
-			<string>EAC1832618E89B3900643C2C</string>
-			<key>productType</key>
-			<string>com.apple.product-type.application</string>
-		</dict>
-		<key>EAC1832618E89B3900643C2C</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.application</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>BRJPopoverPicker Example.app</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>EAC1832718E89B3900643C2C</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>EAC1832618E89B3900643C2C</string>
-				<string>EAC1834118E89B3900643C2C</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Products</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EAC1832818E89B3900643C2C</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>EAC1832918E89B3900643C2C</string>
-				<string>EAC1832B18E89B3900643C2C</string>
-				<string>EAC1832D18E89B3900643C2C</string>
-				<string>EAC1834218E89B3900643C2C</string>
-				<string>0F25900BAFBF4A7FA89ECFD4</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Frameworks</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EAC1832918E89B3900643C2C</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>Foundation.framework</string>
-			<key>path</key>
-			<string>System/Library/Frameworks/Foundation.framework</string>
-			<key>sourceTree</key>
-			<string>SDKROOT</string>
-		</dict>
-		<key>EAC1832A18E89B3900643C2C</key>
-		<dict>
-			<key>fileRef</key>
-			<string>EAC1832918E89B3900643C2C</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>EAC1832B18E89B3900643C2C</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>CoreGraphics.framework</string>
-			<key>path</key>
-			<string>System/Library/Frameworks/CoreGraphics.framework</string>
-			<key>sourceTree</key>
-			<string>SDKROOT</string>
-		</dict>
-		<key>EAC1832C18E89B3900643C2C</key>
-		<dict>
-			<key>fileRef</key>
-			<string>EAC1832B18E89B3900643C2C</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>EAC1832D18E89B3900643C2C</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>UIKit.framework</string>
-			<key>path</key>
-			<string>System/Library/Frameworks/UIKit.framework</string>
-			<key>sourceTree</key>
-			<string>SDKROOT</string>
-		</dict>
-		<key>EAC1832E18E89B3900643C2C</key>
-		<dict>
-			<key>fileRef</key>
-			<string>EAC1832D18E89B3900643C2C</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>EAC1832F18E89B3900643C2C</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>EAC1833818E89B3900643C2C</string>
-				<string>EAC1833918E89B3900643C2C</string>
-				<string>EAC1833B18E89B3900643C2C</string>
-				<string>EAC1833018E89B3900643C2C</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>BRJPopoverPicker Example</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EAC1833018E89B3900643C2C</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>EAC1833118E89B3900643C2C</string>
-				<string>EAC1833218E89B3900643C2C</string>
-				<string>EAC1833518E89B3900643C2C</string>
-				<string>EAC1833718E89B3900643C2C</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Supporting Files</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EAC1833118E89B3900643C2C</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>BRJPopoverPicker Example-Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EAC1833218E89B3900643C2C</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>EAC1833318E89B3900643C2C</string>
-			</array>
-			<key>isa</key>
-			<string>PBXVariantGroup</string>
-			<key>name</key>
-			<string>InfoPlist.strings</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EAC1833318E89B3900643C2C</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.strings</string>
-			<key>name</key>
-			<string>en</string>
-			<key>path</key>
-			<string>en.lproj/InfoPlist.strings</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EAC1833418E89B3900643C2C</key>
-		<dict>
-			<key>fileRef</key>
-			<string>EAC1833218E89B3900643C2C</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>EAC1833518E89B3900643C2C</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>main.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EAC1833618E89B3900643C2C</key>
-		<dict>
-			<key>fileRef</key>
-			<string>EAC1833518E89B3900643C2C</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>EAC1833718E89B3900643C2C</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>BRJPopoverPicker Example-Prefix.pch</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EAC1833818E89B3900643C2C</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>BRJAppDelegate.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EAC1833918E89B3900643C2C</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>BRJAppDelegate.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EAC1833A18E89B3900643C2C</key>
-		<dict>
-			<key>fileRef</key>
-			<string>EAC1833918E89B3900643C2C</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>EAC1833B18E89B3900643C2C</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>folder.assetcatalog</string>
-			<key>path</key>
-			<string>Images.xcassets</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EAC1833C18E89B3900643C2C</key>
-		<dict>
-			<key>fileRef</key>
-			<string>EAC1833B18E89B3900643C2C</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>EAC1833D18E89B3900643C2C</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>EAC1834F18E89B3900643C2C</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>EAC1833E18E89B3900643C2C</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>EAC1834318E89B3900643C2C</string>
-				<string>EAC1834518E89B3900643C2C</string>
-				<string>EAC1834418E89B3900643C2C</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>EAC1833F18E89B3900643C2C</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>EAC1834D18E89B3900643C2C</string>
-			</array>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>EAC1834018E89B3900643C2C</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>EAC1835518E89B3900643C2C</string>
-			<key>buildPhases</key>
-			<array>
-				<string>EAC1833D18E89B3900643C2C</string>
-				<string>EAC1833E18E89B3900643C2C</string>
-				<string>EAC1833F18E89B3900643C2C</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array>
-				<string>EAC1834718E89B3900643C2C</string>
-			</array>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>BRJPopoverPicker ExampleTests</string>
-			<key>productName</key>
-			<string>BRJPopoverPicker ExampleTests</string>
-			<key>productReference</key>
-			<string>EAC1834118E89B3900643C2C</string>
-			<key>productType</key>
-			<string>com.apple.product-type.bundle.unit-test</string>
-		</dict>
-		<key>EAC1834118E89B3900643C2C</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.cfbundle</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>BRJPopoverPicker ExampleTests.xctest</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>EAC1834218E89B3900643C2C</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>XCTest.framework</string>
-			<key>path</key>
-			<string>Library/Frameworks/XCTest.framework</string>
-			<key>sourceTree</key>
-			<string>DEVELOPER_DIR</string>
-		</dict>
-		<key>EAC1834318E89B3900643C2C</key>
-		<dict>
-			<key>fileRef</key>
-			<string>EAC1834218E89B3900643C2C</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>EAC1834418E89B3900643C2C</key>
-		<dict>
-			<key>fileRef</key>
-			<string>EAC1832918E89B3900643C2C</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>EAC1834518E89B3900643C2C</key>
-		<dict>
-			<key>fileRef</key>
-			<string>EAC1832D18E89B3900643C2C</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>EAC1834618E89B3900643C2C</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>EAC1831E18E89B3900643C2C</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>EAC1832518E89B3900643C2C</string>
-			<key>remoteInfo</key>
-			<string>BRJPopoverPicker Example</string>
-		</dict>
-		<key>EAC1834718E89B3900643C2C</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>target</key>
-			<string>EAC1832518E89B3900643C2C</string>
-			<key>targetProxy</key>
-			<string>EAC1834618E89B3900643C2C</string>
-		</dict>
-		<key>EAC1834818E89B3900643C2C</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>EAC1834E18E89B3900643C2C</string>
-				<string>EAC1834918E89B3900643C2C</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>BRJPopoverPicker ExampleTests</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EAC1834918E89B3900643C2C</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>EAC1834A18E89B3900643C2C</string>
-				<string>EAC1834B18E89B3900643C2C</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Supporting Files</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EAC1834A18E89B3900643C2C</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>BRJPopoverPicker ExampleTests-Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EAC1834B18E89B3900643C2C</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>EAC1834C18E89B3900643C2C</string>
-			</array>
-			<key>isa</key>
-			<string>PBXVariantGroup</string>
-			<key>name</key>
-			<string>InfoPlist.strings</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EAC1834C18E89B3900643C2C</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.strings</string>
-			<key>name</key>
-			<string>en</string>
-			<key>path</key>
-			<string>en.lproj/InfoPlist.strings</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EAC1834D18E89B3900643C2C</key>
-		<dict>
-			<key>fileRef</key>
-			<string>EAC1834B18E89B3900643C2C</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>EAC1834E18E89B3900643C2C</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>BRJPopoverPicker_ExampleTests.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EAC1834F18E89B3900643C2C</key>
-		<dict>
-			<key>fileRef</key>
-			<string>EAC1834E18E89B3900643C2C</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>EAC1835018E89B3900643C2C</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_DYNAMIC_NO_PIC</key>
-				<string>NO</string>
-				<key>GCC_OPTIMIZATION_LEVEL</key>
-				<string>0</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
-				<string>NO</string>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES_ERROR</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES_AGGRESSIVE</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>7.1</string>
-				<key>ONLY_ACTIVE_ARCH</key>
-				<string>YES</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>2</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>EAC1835118E89B3900643C2C</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>YES</string>
-				<key>ENABLE_NS_ASSERTIONS</key>
-				<string>NO</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES_ERROR</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES_AGGRESSIVE</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>7.1</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>2</string>
-				<key>VALIDATE_PRODUCT</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>EAC1835218E89B3900643C2C</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>EAC1835318E89B3900643C2C</string>
-				<string>EAC1835418E89B3900643C2C</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>EAC1835318E89B3900643C2C</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>7453F524CBA644DB8716A2F8</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
-				<string>AppIcon</string>
-				<key>ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME</key>
-				<string>LaunchImage</string>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>BRJPopoverPicker Example/BRJPopoverPicker Example-Prefix.pch</string>
-				<key>INFOPLIST_FILE</key>
-				<string>BRJPopoverPicker Example/BRJPopoverPicker Example-Info.plist</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>WRAPPER_EXTENSION</key>
-				<string>app</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>EAC1835418E89B3900643C2C</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>7453F524CBA644DB8716A2F8</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
-				<string>AppIcon</string>
-				<key>ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME</key>
-				<string>LaunchImage</string>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>BRJPopoverPicker Example/BRJPopoverPicker Example-Prefix.pch</string>
-				<key>INFOPLIST_FILE</key>
-				<string>BRJPopoverPicker Example/BRJPopoverPicker Example-Info.plist</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>WRAPPER_EXTENSION</key>
-				<string>app</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>EAC1835518E89B3900643C2C</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>EAC1835618E89B3900643C2C</string>
-				<string>EAC1835718E89B3900643C2C</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>EAC1835618E89B3900643C2C</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>BUNDLE_LOADER</key>
-				<string>$(BUILT_PRODUCTS_DIR)/BRJPopoverPicker Example.app/BRJPopoverPicker Example</string>
-				<key>FRAMEWORK_SEARCH_PATHS</key>
-				<array>
-					<string>$(SDKROOT)/Developer/Library/Frameworks</string>
-					<string>$(inherited)</string>
-					<string>$(DEVELOPER_FRAMEWORKS_DIR)</string>
-				</array>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>BRJPopoverPicker Example/BRJPopoverPicker Example-Prefix.pch</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>INFOPLIST_FILE</key>
-				<string>BRJPopoverPicker ExampleTests/BRJPopoverPicker ExampleTests-Info.plist</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>TEST_HOST</key>
-				<string>$(BUNDLE_LOADER)</string>
-				<key>WRAPPER_EXTENSION</key>
-				<string>xctest</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>EAC1835718E89B3900643C2C</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>BUNDLE_LOADER</key>
-				<string>$(BUILT_PRODUCTS_DIR)/BRJPopoverPicker Example.app/BRJPopoverPicker Example</string>
-				<key>FRAMEWORK_SEARCH_PATHS</key>
-				<array>
-					<string>$(SDKROOT)/Developer/Library/Frameworks</string>
-					<string>$(inherited)</string>
-					<string>$(DEVELOPER_FRAMEWORKS_DIR)</string>
-				</array>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>BRJPopoverPicker Example/BRJPopoverPicker Example-Prefix.pch</string>
-				<key>INFOPLIST_FILE</key>
-				<string>BRJPopoverPicker ExampleTests/BRJPopoverPicker ExampleTests-Info.plist</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>TEST_HOST</key>
-				<string>$(BUNDLE_LOADER)</string>
-				<key>WRAPPER_EXTENSION</key>
-				<string>xctest</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>F023E974B4C84367809EBA24</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Check Pods Manifest.lock</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
-if [[ $? != 0 ]] ; then
-    cat &lt;&lt; EOM
-error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
-EOM
-    exit 1
-fi
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-	</dict>
-	<key>rootObject</key>
-	<string>EAC1831E18E89B3900643C2C</string>
-</dict>
-</plist>
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		13BC3C8BE50243409ADE7A9A /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F25900BAFBF4A7FA89ECFD4 /* libPods.a */; };
+		EAAD20D118E8EAE700CCC0D5 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = EAAD20D318E8EAE700CCC0D5 /* Localizable.strings */; };
+		EAAD20D718E8ECE200CCC0D5 /* BRJTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EAAD20D618E8ECE200CCC0D5 /* BRJTableViewController.m */; };
+		EAAD20DA18E8F63600CCC0D5 /* BRJTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EAAD20D918E8F63600CCC0D5 /* BRJTableViewCell.m */; };
+		EAAD20DE18E8F7DD00CCC0D5 /* MLB Teams.plist in Resources */ = {isa = PBXBuildFile; fileRef = EAAD20DD18E8F7DD00CCC0D5 /* MLB Teams.plist */; };
+		EAC1832A18E89B3900643C2C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAC1832918E89B3900643C2C /* Foundation.framework */; };
+		EAC1832C18E89B3900643C2C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAC1832B18E89B3900643C2C /* CoreGraphics.framework */; };
+		EAC1832E18E89B3900643C2C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAC1832D18E89B3900643C2C /* UIKit.framework */; };
+		EAC1833418E89B3900643C2C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EAC1833218E89B3900643C2C /* InfoPlist.strings */; };
+		EAC1833618E89B3900643C2C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EAC1833518E89B3900643C2C /* main.m */; };
+		EAC1833A18E89B3900643C2C /* BRJAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EAC1833918E89B3900643C2C /* BRJAppDelegate.m */; };
+		EAC1833C18E89B3900643C2C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAC1833B18E89B3900643C2C /* Images.xcassets */; };
+		EAC1834318E89B3900643C2C /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAC1834218E89B3900643C2C /* XCTest.framework */; };
+		EAC1834418E89B3900643C2C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAC1832918E89B3900643C2C /* Foundation.framework */; };
+		EAC1834518E89B3900643C2C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAC1832D18E89B3900643C2C /* UIKit.framework */; };
+		EAC1834D18E89B3900643C2C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EAC1834B18E89B3900643C2C /* InfoPlist.strings */; };
+		EAC1834F18E89B3900643C2C /* BRJPopoverPicker_ExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EAC1834E18E89B3900643C2C /* BRJPopoverPicker_ExampleTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EAC1834618E89B3900643C2C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EAC1831E18E89B3900643C2C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EAC1832518E89B3900643C2C;
+			remoteInfo = "BRJPopoverPicker Example";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0F25900BAFBF4A7FA89ECFD4 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		7453F524CBA644DB8716A2F8 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		EAAD20D218E8EAE700CCC0D5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		EAAD20D518E8ECE200CCC0D5 /* BRJTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BRJTableViewController.h; path = "View Controllers/BRJTableViewController.h"; sourceTree = "<group>"; };
+		EAAD20D618E8ECE200CCC0D5 /* BRJTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BRJTableViewController.m; path = "View Controllers/BRJTableViewController.m"; sourceTree = "<group>"; };
+		EAAD20D818E8F63600CCC0D5 /* BRJTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BRJTableViewCell.h; path = Views/BRJTableViewCell.h; sourceTree = "<group>"; };
+		EAAD20D918E8F63600CCC0D5 /* BRJTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BRJTableViewCell.m; path = Views/BRJTableViewCell.m; sourceTree = "<group>"; };
+		EAAD20DD18E8F7DD00CCC0D5 /* MLB Teams.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "MLB Teams.plist"; path = "Resources/MLB Teams.plist"; sourceTree = "<group>"; };
+		EAC1832618E89B3900643C2C /* BRJPopoverPicker Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BRJPopoverPicker Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EAC1832918E89B3900643C2C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		EAC1832B18E89B3900643C2C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		EAC1832D18E89B3900643C2C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		EAC1833118E89B3900643C2C /* BRJPopoverPicker Example-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BRJPopoverPicker Example-Info.plist"; sourceTree = "<group>"; };
+		EAC1833318E89B3900643C2C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		EAC1833518E89B3900643C2C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EAC1833718E89B3900643C2C /* BRJPopoverPicker Example-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BRJPopoverPicker Example-Prefix.pch"; sourceTree = "<group>"; };
+		EAC1833818E89B3900643C2C /* BRJAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BRJAppDelegate.h; sourceTree = "<group>"; };
+		EAC1833918E89B3900643C2C /* BRJAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BRJAppDelegate.m; sourceTree = "<group>"; };
+		EAC1833B18E89B3900643C2C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		EAC1834118E89B3900643C2C /* BRJPopoverPicker ExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "BRJPopoverPicker ExampleTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EAC1834218E89B3900643C2C /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		EAC1834A18E89B3900643C2C /* BRJPopoverPicker ExampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BRJPopoverPicker ExampleTests-Info.plist"; sourceTree = "<group>"; };
+		EAC1834C18E89B3900643C2C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		EAC1834E18E89B3900643C2C /* BRJPopoverPicker_ExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BRJPopoverPicker_ExampleTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EAC1832318E89B3900643C2C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAC1832C18E89B3900643C2C /* CoreGraphics.framework in Frameworks */,
+				EAC1832E18E89B3900643C2C /* UIKit.framework in Frameworks */,
+				EAC1832A18E89B3900643C2C /* Foundation.framework in Frameworks */,
+				13BC3C8BE50243409ADE7A9A /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAC1833E18E89B3900643C2C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAC1834318E89B3900643C2C /* XCTest.framework in Frameworks */,
+				EAC1834518E89B3900643C2C /* UIKit.framework in Frameworks */,
+				EAC1834418E89B3900643C2C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EAAD20CB18E8E94800CCC0D5 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				EAAD20D518E8ECE200CCC0D5 /* BRJTableViewController.h */,
+				EAAD20D618E8ECE200CCC0D5 /* BRJTableViewController.m */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		EAAD20D418E8EAF500CCC0D5 /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				EAAD20D318E8EAE700CCC0D5 /* Localizable.strings */,
+			);
+			name = Localization;
+			sourceTree = "<group>";
+		};
+		EAAD20DB18E8F63A00CCC0D5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EAAD20D818E8F63600CCC0D5 /* BRJTableViewCell.h */,
+				EAAD20D918E8F63600CCC0D5 /* BRJTableViewCell.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		EAAD20DC18E8F7C300CCC0D5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EAAD20DD18E8F7DD00CCC0D5 /* MLB Teams.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		EAC1831D18E89B3900643C2C = {
+			isa = PBXGroup;
+			children = (
+				EAC1832F18E89B3900643C2C /* BRJPopoverPicker Example */,
+				EAC1834818E89B3900643C2C /* BRJPopoverPicker ExampleTests */,
+				EAC1832818E89B3900643C2C /* Frameworks */,
+				EAC1832718E89B3900643C2C /* Products */,
+				7453F524CBA644DB8716A2F8 /* Pods.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		EAC1832718E89B3900643C2C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EAC1832618E89B3900643C2C /* BRJPopoverPicker Example.app */,
+				EAC1834118E89B3900643C2C /* BRJPopoverPicker ExampleTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EAC1832818E89B3900643C2C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EAC1832918E89B3900643C2C /* Foundation.framework */,
+				EAC1832B18E89B3900643C2C /* CoreGraphics.framework */,
+				EAC1832D18E89B3900643C2C /* UIKit.framework */,
+				EAC1834218E89B3900643C2C /* XCTest.framework */,
+				0F25900BAFBF4A7FA89ECFD4 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EAC1832F18E89B3900643C2C /* BRJPopoverPicker Example */ = {
+			isa = PBXGroup;
+			children = (
+				EAC1833818E89B3900643C2C /* BRJAppDelegate.h */,
+				EAC1833918E89B3900643C2C /* BRJAppDelegate.m */,
+				EAC1833B18E89B3900643C2C /* Images.xcassets */,
+				EAAD20D418E8EAF500CCC0D5 /* Localization */,
+				EAAD20DC18E8F7C300CCC0D5 /* Resources */,
+				EAC1833018E89B3900643C2C /* Supporting Files */,
+				EAAD20CB18E8E94800CCC0D5 /* View Controllers */,
+				EAAD20DB18E8F63A00CCC0D5 /* Views */,
+			);
+			path = "BRJPopoverPicker Example";
+			sourceTree = "<group>";
+		};
+		EAC1833018E89B3900643C2C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EAC1833118E89B3900643C2C /* BRJPopoverPicker Example-Info.plist */,
+				EAC1833218E89B3900643C2C /* InfoPlist.strings */,
+				EAC1833518E89B3900643C2C /* main.m */,
+				EAC1833718E89B3900643C2C /* BRJPopoverPicker Example-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EAC1834818E89B3900643C2C /* BRJPopoverPicker ExampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				EAC1834E18E89B3900643C2C /* BRJPopoverPicker_ExampleTests.m */,
+				EAC1834918E89B3900643C2C /* Supporting Files */,
+			);
+			path = "BRJPopoverPicker ExampleTests";
+			sourceTree = "<group>";
+		};
+		EAC1834918E89B3900643C2C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EAC1834A18E89B3900643C2C /* BRJPopoverPicker ExampleTests-Info.plist */,
+				EAC1834B18E89B3900643C2C /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EAC1832518E89B3900643C2C /* BRJPopoverPicker Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EAC1835218E89B3900643C2C /* Build configuration list for PBXNativeTarget "BRJPopoverPicker Example" */;
+			buildPhases = (
+				F023E974B4C84367809EBA24 /* Check Pods Manifest.lock */,
+				EAC1832218E89B3900643C2C /* Sources */,
+				EAC1832318E89B3900643C2C /* Frameworks */,
+				EAC1832418E89B3900643C2C /* Resources */,
+				C8575EF23D2C4C7FB68AFF67 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "BRJPopoverPicker Example";
+			productName = "BRJPopoverPicker Example";
+			productReference = EAC1832618E89B3900643C2C /* BRJPopoverPicker Example.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EAC1834018E89B3900643C2C /* BRJPopoverPicker ExampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EAC1835518E89B3900643C2C /* Build configuration list for PBXNativeTarget "BRJPopoverPicker ExampleTests" */;
+			buildPhases = (
+				EAC1833D18E89B3900643C2C /* Sources */,
+				EAC1833E18E89B3900643C2C /* Frameworks */,
+				EAC1833F18E89B3900643C2C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EAC1834718E89B3900643C2C /* PBXTargetDependency */,
+			);
+			name = "BRJPopoverPicker ExampleTests";
+			productName = "BRJPopoverPicker ExampleTests";
+			productReference = EAC1834118E89B3900643C2C /* BRJPopoverPicker ExampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EAC1831E18E89B3900643C2C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = BRJ;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = Bixelcog;
+				TargetAttributes = {
+					EAC1834018E89B3900643C2C = {
+						TestTargetID = EAC1832518E89B3900643C2C;
+					};
+				};
+			};
+			buildConfigurationList = EAC1832118E89B3900643C2C /* Build configuration list for PBXProject "BRJPopoverPicker Example" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = EAC1831D18E89B3900643C2C;
+			productRefGroup = EAC1832718E89B3900643C2C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EAC1832518E89B3900643C2C /* BRJPopoverPicker Example */,
+				EAC1834018E89B3900643C2C /* BRJPopoverPicker ExampleTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EAC1832418E89B3900643C2C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAC1833418E89B3900643C2C /* InfoPlist.strings in Resources */,
+				EAAD20D118E8EAE700CCC0D5 /* Localizable.strings in Resources */,
+				EAAD20DE18E8F7DD00CCC0D5 /* MLB Teams.plist in Resources */,
+				EAC1833C18E89B3900643C2C /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAC1833F18E89B3900643C2C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAC1834D18E89B3900643C2C /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C8575EF23D2C4C7FB68AFF67 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F023E974B4C84367809EBA24 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EAC1832218E89B3900643C2C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAC1833618E89B3900643C2C /* main.m in Sources */,
+				EAAD20D718E8ECE200CCC0D5 /* BRJTableViewController.m in Sources */,
+				EAAD20DA18E8F63600CCC0D5 /* BRJTableViewCell.m in Sources */,
+				EAC1833A18E89B3900643C2C /* BRJAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAC1833D18E89B3900643C2C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAC1834F18E89B3900643C2C /* BRJPopoverPicker_ExampleTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EAC1834718E89B3900643C2C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EAC1832518E89B3900643C2C /* BRJPopoverPicker Example */;
+			targetProxy = EAC1834618E89B3900643C2C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EAAD20D318E8EAE700CCC0D5 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EAAD20D218E8EAE700CCC0D5 /* en */,
+			);
+			name = Localizable.strings;
+			path = Localization;
+			sourceTree = "<group>";
+		};
+		EAC1833218E89B3900643C2C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EAC1833318E89B3900643C2C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		EAC1834B18E89B3900643C2C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EAC1834C18E89B3900643C2C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EAC1835018E89B3900643C2C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		EAC1835118E89B3900643C2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EAC1835318E89B3900643C2C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7453F524CBA644DB8716A2F8 /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BRJPopoverPicker Example/BRJPopoverPicker Example-Prefix.pch";
+				INFOPLIST_FILE = "BRJPopoverPicker Example/BRJPopoverPicker Example-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		EAC1835418E89B3900643C2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7453F524CBA644DB8716A2F8 /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BRJPopoverPicker Example/BRJPopoverPicker Example-Prefix.pch";
+				INFOPLIST_FILE = "BRJPopoverPicker Example/BRJPopoverPicker Example-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		EAC1835618E89B3900643C2C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/BRJPopoverPicker Example.app/BRJPopoverPicker Example";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BRJPopoverPicker Example/BRJPopoverPicker Example-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "BRJPopoverPicker ExampleTests/BRJPopoverPicker ExampleTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		EAC1835718E89B3900643C2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/BRJPopoverPicker Example.app/BRJPopoverPicker Example";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BRJPopoverPicker Example/BRJPopoverPicker Example-Prefix.pch";
+				INFOPLIST_FILE = "BRJPopoverPicker ExampleTests/BRJPopoverPicker ExampleTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EAC1832118E89B3900643C2C /* Build configuration list for PBXProject "BRJPopoverPicker Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EAC1835018E89B3900643C2C /* Debug */,
+				EAC1835118E89B3900643C2C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EAC1835218E89B3900643C2C /* Build configuration list for PBXNativeTarget "BRJPopoverPicker Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EAC1835318E89B3900643C2C /* Debug */,
+				EAC1835418E89B3900643C2C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EAC1835518E89B3900643C2C /* Build configuration list for PBXNativeTarget "BRJPopoverPicker ExampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EAC1835618E89B3900643C2C /* Debug */,
+				EAC1835718E89B3900643C2C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EAC1831E18E89B3900643C2C /* Project object */;
+}

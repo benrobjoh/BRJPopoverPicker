@@ -50,6 +50,7 @@ static NSString * const BRJPopoverPickerCellReuseIdentifier = @"BRJPopoverPicker
         UITableViewController *tableViewController = [[UITableViewController alloc] initWithStyle:UITableViewStylePlain];
         tableViewController.tableView.dataSource = self;
         tableViewController.tableView.delegate = self;
+        [tableViewController.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:BRJPopoverPickerCellReuseIdentifier];
         tableViewController.title = self.title;
         
         UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:tableViewController];
