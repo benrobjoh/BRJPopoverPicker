@@ -33,6 +33,7 @@
 - (NSString *)titleForRowAtIndex:(NSUInteger)index;
 - (NSUInteger)numberOfRows;
 - (void)selectRowAtIndex:(NSUInteger)index;
+- (NSInteger)indexOfSelectedRow;
 - (void)presentPopoverPickerFromRect:(CGRect)rect inView:(UIView *)view permittedArrowDirections:(UIPopoverArrowDirection)arrowDirections animated:(BOOL)animated;
 - (void)presentPopoverPickerFromBarButtonItem:(UIBarButtonItem *)item permittedArrowDirections:(UIPopoverArrowDirection)arrowDirections animated:(BOOL)animated;
 - (void)dismissPopoverPickerAnimated:(BOOL)animated;

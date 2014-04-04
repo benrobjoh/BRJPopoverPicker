@@ -71,6 +71,18 @@ static NSString * const BRJPopoverPickerCellReuseIdentifier = @"BRJPopoverPicker
     return [self.dataSource numberOfRowsInPopoverPicker:self];
 }
 
+- (NSInteger)indexOfSelectedRow {
+    NSIndexPath *indexPath = [self.tableViewController.tableView indexPathForSelectedRow];
+    NSInteger selectedRow;
+    if (indexPath) {
+        selectedRow = indexPath.row;
+    }
+    else {
+        selectedRow = NSNotFound;
+    }
+    return selectedRow;
+}
+
 #pragma mark - Getter
 - (UITableViewController *)tableViewController {
     if (!_tableViewController) {
@@ -79,6 +91,7 @@ static NSString * const BRJPopoverPickerCellReuseIdentifier = @"BRJPopoverPicker
             tableViewController.tableView.dataSource = self;
             tableViewController.tableView.delegate = self;
             [tableViewController.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:BRJPopoverPickerCellReuseIdentifier];
+            tableViewController.tableView.backgroundColor = [UIColor whiteColor];
             tableViewController.clearsSelectionOnViewWillAppear = NO;
             tableViewController.title = self.title;
             tableViewController;
