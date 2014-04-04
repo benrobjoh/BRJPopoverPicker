@@ -44,6 +44,14 @@ static NSString * const BRJPopoverPickerCellReuseIdentifier = @"BRJPopoverPicker
 - (void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath {
     NSString *title = [self titleForRowAtIndex:indexPath.row];
     cell.textLabel.text = title;
+    
+    if (self.selectedBackgroundColor) {
+        cell.selectedBackgroundView = ({
+            UIView *background = [[UIView alloc] init];
+            background.backgroundColor = self.selectedBackgroundColor;
+            background;
+        });
+    }
 }
 
 - (void)configurePopoverController {
@@ -51,6 +59,7 @@ static NSString * const BRJPopoverPickerCellReuseIdentifier = @"BRJPopoverPicker
         UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:self.tableViewController];
         
         UIPopoverController *popoverController = [[UIPopoverController alloc] initWithContentViewController:navigationController];
+        popoverController.backgroundColor = [UIColor whiteColor];
         popoverController;
     });
 }
@@ -83,7 +92,7 @@ static NSString * const BRJPopoverPickerCellReuseIdentifier = @"BRJPopoverPicker
     return selectedRow;
 }
 
-#pragma mark - Getter
+#pragma mark - Getter Override
 - (UITableViewController *)tableViewController {
     if (!_tableViewController) {
         _tableViewController = ({
@@ -91,13 +100,20 @@ static NSString * const BRJPopoverPickerCellReuseIdentifier = @"BRJPopoverPicker
             tableViewController.tableView.dataSource = self;
             tableViewController.tableView.delegate = self;
             [tableViewController.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:BRJPopoverPickerCellReuseIdentifier];
-            tableViewController.tableView.backgroundColor = [UIColor whiteColor];
             tableViewController.clearsSelectionOnViewWillAppear = NO;
             tableViewController.title = self.title;
             tableViewController;
         });
     }
     return _tableViewController;
+}
+
+#pragma mark - Setter Override
+- (void)setSelectedBackgroundColor:(UIColor *)selectedBackgroundColor {
+    if ([_selectedBackgroundColor isEqual:selectedBackgroundColor]) {
+        _selectedBackgroundColor = selectedBackgroundColor;
+        [self.tableViewController.tableView reloadData];
+    }
 }
 
 #pragma mark - Presentation and Dismissal

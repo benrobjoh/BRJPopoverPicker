@@ -30,6 +30,7 @@
 @property (weak, nonatomic) id<BRJPopoverPickerDelegate> delegate;
 @property (weak, nonatomic) id<BRJPopoverPickerDataSource> dataSource;
 @property (copy, nonatomic) NSString *title;
+@property (strong, nonatomic) UIColor *selectedBackgroundColor;
 - (NSString *)titleForRowAtIndex:(NSUInteger)index;
 - (NSUInteger)numberOfRows;
 - (void)selectRowAtIndex:(NSUInteger)index;
