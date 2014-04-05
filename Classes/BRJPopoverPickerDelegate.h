@@ -28,4 +28,5 @@
 @protocol BRJPopoverPickerDelegate <NSObject>
 @optional
 - (void)popoverPicker:(BRJPopoverPicker *)popoverPicker didSelectRowWithTitle:(NSString *)selectedTitle atIndex:(NSUInteger)selectedIndex;
+- (CGSize)contentSizeForPopoverPicker:(BRJPopoverPicker *)popoverPicker;
 @end

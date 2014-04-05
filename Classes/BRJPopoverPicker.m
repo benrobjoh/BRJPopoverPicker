@@ -60,6 +60,10 @@ static NSString * const BRJPopoverPickerCellReuseIdentifier = @"BRJPopoverPicker
         
         UIPopoverController *popoverController = [[UIPopoverController alloc] initWithContentViewController:navigationController];
         popoverController.backgroundColor = [UIColor whiteColor];
+        
+        if ([self.delegate respondsToSelector:@selector(contentSizeForPopoverPicker:)]) {
+            popoverController.popoverContentSize = [self.delegate contentSizeForPopoverPicker:self];
+        }
         popoverController;
     });
 }
