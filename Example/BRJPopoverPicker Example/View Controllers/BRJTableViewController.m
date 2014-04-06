@@ -8,7 +8,6 @@
 
 #import "BRJTableViewController.h"
 #import "BRJTableViewCell.h"
-#import "BRJPopoverPicker.h"
 
 @interface BRJTableViewController () <BRJPopoverPickerDataSource, BRJPopoverPickerDelegate>
 @property (strong, nonatomic) NSArray *teamNames;

@@ -25,8 +25,22 @@
 #import <Foundation/Foundation.h>
 @class BRJPopoverPicker;
 
+/**
+ The delegate of the `BRJPopoverPicker` conforms to the `BRJPopoverPickerDelegate` protocol. The delegate reacts to row selections and gives the picker information about its size.
+ */
 @protocol BRJPopoverPickerDelegate <NSObject>
 @optional
+/**
+ Informs the delegate that a particular row is selected.
+ @param popoverPicker The picker where the selection occurred
+ @param selectedTitle The title for the selected row
+ @param selectedIndex The index of the selected row
+ */
 - (void)popoverPicker:(BRJPopoverPicker *)popoverPicker didSelectRowWithTitle:(NSString *)selectedTitle atIndex:(NSUInteger)selectedIndex;
+/**
+ Returns the desired size for the popover picker
+ @param popoverPicker The picker whose size is being requested
+ @return The content size for `popoverPicker`
+ */
 - (CGSize)contentSizeForPopoverPicker:(BRJPopoverPicker *)popoverPicker;
 @end
