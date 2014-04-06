@@ -9,6 +9,6 @@ EXTERNAL SOURCES:
     :path: ../BRJPopoverPicker.podspec
 
 SPEC CHECKSUMS:
-  BRJPopoverPicker: 0ff23366c9f06611a25bafafad177992febfbf0a
+  BRJPopoverPicker: 111778d8137d46d71fe03891758bc1d5d662d679
 
-COCOAPODS: 0.29.0
+COCOAPODS: 0.31.1
