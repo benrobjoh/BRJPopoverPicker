@@ -30,6 +30,7 @@ static NSString * const BRJPopoverPickerCellReuseIdentifier = @"BRJPopoverPicker
 @property (strong, nonatomic) UIPopoverController *popoverController;
 @property (strong, nonatomic) UITableViewController *tableViewController;
 @property (assign, nonatomic) NSUInteger selectedIndex;
+@property (assign, nonatomic, getter = isPopoverPickerVisible) BOOL popoverPickerVisible;
 @end
 
 @implementation BRJPopoverPicker
@@ -73,6 +74,10 @@ static NSString * const BRJPopoverPickerCellReuseIdentifier = @"BRJPopoverPicker
 #pragma mark - Process Selection
 - (void)selectRowAtIndex:(NSUInteger)index {
     self.selectedIndex = index;
+    
+    if ([self isPopoverPickerVisible]) {
+        [self processRowSelection];
+    }
 }
 
 - (NSInteger)indexOfSelectedRow {
@@ -81,6 +86,10 @@ static NSString * const BRJPopoverPickerCellReuseIdentifier = @"BRJPopoverPicker
 
 - (void)deselectSelectedRow {
     self.selectedIndex = NSNotFound;
+    
+    if ([self isPopoverPickerVisible]) {
+        [self processRowSelection];
+    }
 }
 
 - (void)invalidatePopoverPicker {
@@ -135,18 +144,23 @@ static NSString * const BRJPopoverPickerCellReuseIdentifier = @"BRJPopoverPicker
 
 #pragma mark - Presentation and Dismissal
 - (void)presentPopoverPickerFromRect:(CGRect)rect inView:(UIView *)view permittedArrowDirections:(UIPopoverArrowDirection)arrowDirections animated:(BOOL)animated {
-    [self configurePopoverController];
-    [self processRowSelection];
+    [self presentPopover];
     [self.popoverController presentPopoverFromRect:rect inView:view permittedArrowDirections:arrowDirections animated:animated];
 }
 
 - (void)presentPopoverPickerFromBarButtonItem:(UIBarButtonItem *)item permittedArrowDirections:(UIPopoverArrowDirection)arrowDirections animated:(BOOL)animated {
-    [self configurePopoverController];
-    [self processRowSelection];
+    [self presentPopover];
     [self.popoverController presentPopoverFromBarButtonItem:item permittedArrowDirections:arrowDirections animated:animated];
 }
 
+- (void)presentPopover {
+    [self configurePopoverController];
+    [self processRowSelection];
+    self.popoverPickerVisible = YES;
+}
+
 - (void)dismissPopoverPickerAnimated:(BOOL)animated {
+    self.popoverPickerVisible = NO;
     [self.popoverController dismissPopoverAnimated:animated];
     [self invalidatePopoverPicker];
 }
