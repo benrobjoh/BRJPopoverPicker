@@ -1,6 +1,6 @@
 //
 //  BRJPopoverPicker.h
-//  
+//
 //
 //  Created by Ben Johnson on 3/30/14.
 //
@@ -69,6 +69,10 @@
 - (NSUInteger)numberOfRows;
 
 /**
+ @name Selection
+ */
+
+/**
  Selects and highlights the specified row. Calling this method does not cause a call to the delegate method `popoverPicker:didSelectRowWithTitle:atIndex:`. The picker will scroll the row at `index` to the top.
  @param index The index of the row to select and highlight
  */
@@ -79,6 +83,11 @@
  @return The index of the selected row, or `NSNotFound` if the picker does not have a selected row
  */
 - (NSInteger)indexOfSelectedRow;
+
+/**
+ Resets selection in the popover picker.
+ */
+- (void)deselectSelectedRow;
 
 /**
  @name Presentation
