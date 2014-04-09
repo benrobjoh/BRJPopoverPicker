@@ -148,6 +148,10 @@ static NSString * const BRJPopoverPickerCellReuseIdentifier = @"BRJPopoverPicker
     [self.popoverController presentPopoverFromRect:rect inView:view permittedArrowDirections:arrowDirections animated:animated];
 }
 
+- (void)presentPopoverPickerFromPoint:(CGPoint)point inView:(UIView *)view permittedArrowDirections:(UIPopoverArrowDirection)arrowDirections animated:(BOOL)animated {
+    [self presentPopoverPickerFromRect:CGRectMake(point.x, point.y, 0, 0) inView:view permittedArrowDirections:arrowDirections animated:animated];
+}
+
 - (void)presentPopoverPickerFromBarButtonItem:(UIBarButtonItem *)item permittedArrowDirections:(UIPopoverArrowDirection)arrowDirections animated:(BOOL)animated {
     [self presentPopover];
     [self.popoverController presentPopoverFromBarButtonItem:item permittedArrowDirections:arrowDirections animated:animated];

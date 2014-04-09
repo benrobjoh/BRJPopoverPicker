@@ -103,6 +103,15 @@
 - (void)presentPopoverPickerFromRect:(CGRect)rect inView:(UIView *)view permittedArrowDirections:(UIPopoverArrowDirection)arrowDirections animated:(BOOL)animated;
 
 /**
+ Presents the popover picker from the specified point
+ @param point The point from which to present the popover picker
+ @param view The view which contains `point`
+ @param arrowDirections The allowed arrow directions of the popover
+ @param animated Pass `YES` to animate the popover's presentation
+ */
+- (void)presentPopoverPickerFromPoint:(CGPoint)point inView:(UIView *)view permittedArrowDirections:(UIPopoverArrowDirection)arrowDirections animated:(BOOL)animated;
+
+/**
  Presents the popover picker from the specified location
  @param item The bar button item from which to present the popover picker
  @param arrowDirections The allowed arrow directions of the popover
