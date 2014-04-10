@@ -158,9 +158,11 @@ static NSString * const BRJPopoverPickerCellReuseIdentifier = @"BRJPopoverPicker
 }
 
 - (void)presentPopover {
-    [self configurePopoverController];
-    [self processRowSelection];
-    self.popoverPickerVisible = YES;
+    if (!self.popoverPickerVisible) {
+        [self configurePopoverController];
+        [self processRowSelection];
+        self.popoverPickerVisible = YES;
+    }
 }
 
 - (void)dismissPopoverPickerAnimated:(BOOL)animated {
