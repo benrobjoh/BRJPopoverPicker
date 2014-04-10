@@ -5,7 +5,7 @@ Pod::Spec.new do |s|
 
   s.homepage         = "https://github.com/benrobjoh/BRJPopoverPicker"
   s.license          = 'MIT'
-  s.author           = { "Ben Johnson" => "ben@benrobjoh.com" }
+  s.author           = { "Ben Johnson" => "code@benrobjoh.com" }
   s.source           = { :git => "https://github.com/benrobjoh/BRJPopoverPicker.git", :tag => s.version.to_s }
 
   s.platform     = :ios, '7.0'
