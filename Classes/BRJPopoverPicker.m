@@ -112,13 +112,6 @@ static NSString * const BRJPopoverPickerCellReuseIdentifier = @"BRJPopoverPicker
 }
 
 #pragma mark - Setter Override
-- (void)setSelectedBackgroundColor:(UIColor *)selectedBackgroundColor {
-    if (![_selectedBackgroundColor isEqual:selectedBackgroundColor]) {
-        _selectedBackgroundColor = selectedBackgroundColor;
-        [self.tableViewController.tableView reloadData];
-    }
-}
-
 - (void)setTitle:(NSString *)title {
     _title = [title copy];
     self.tableViewController.title = _title;
