@@ -71,6 +71,15 @@ static NSString * const BRJPopoverPickerCellReuseIdentifier = @"BRJPopoverPicker
             background;
         });
     }
+    
+    if ([self canSelectRowAtIndex:indexPath.row]) {
+        cell.selectionStyle  = UITableViewCellSelectionStyleDefault;
+        cell.textLabel.textColor = [UIColor blackColor];
+    }
+    else {
+        cell.selectionStyle = UITableViewCellEditingStyleNone;
+        cell.textLabel.textColor = [UIColor grayColor];
+    }
 }
 
 #pragma mark - Process Selection
@@ -109,6 +118,13 @@ static NSString * const BRJPopoverPickerCellReuseIdentifier = @"BRJPopoverPicker
 
 - (NSUInteger)numberOfRows {
     return [self.dataSource numberOfRowsInPopoverPicker:self];
+}
+
+- (BOOL)canSelectRowAtIndex:(NSUInteger)index {
+    if ([self.delegate respondsToSelector:@selector(popoverPicker:canSelectRowWithTitle:atIndex:)]) {
+        return [self.delegate popoverPicker:self canSelectRowWithTitle:[self titleForRowAtIndex:index] atIndex:index];
+    }
+    return YES;
 }
 
 #pragma mark - Setter Override
@@ -164,10 +180,14 @@ static NSString * const BRJPopoverPickerCellReuseIdentifier = @"BRJPopoverPicker
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     self.selectedIndex = indexPath.row;
     if ([self.delegate respondsToSelector:@selector(popoverPicker:didSelectRowWithTitle:atIndex:)]) {
-        NSString *title = [self.dataSource popoverPicker:self titleForRowAtIndex:indexPath.row];
+        NSString *title = [self titleForRowAtIndex:indexPath.row];
         [self.delegate popoverPicker:self didSelectRowWithTitle:title atIndex:indexPath.row];
     }
     [self dismissPopoverPickerAnimated:YES];
+}
+
+- (NSIndexPath *)tableView:(UITableView *)tableView willSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    return [self canSelectRowAtIndex:indexPath.row] ? indexPath : nil;
 }
 
 @end
