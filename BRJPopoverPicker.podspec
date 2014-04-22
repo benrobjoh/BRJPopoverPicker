@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "BRJPopoverPicker"
-  s.version          = "0.1.1"
+  s.version          = "0.1.2"
   s.summary          = "BRJPopoverPicker presents a list inside a popover and allows the user to select one item."
 
   s.homepage         = "https://github.com/benrobjoh/BRJPopoverPicker"

@@ -33,8 +33,8 @@
  
  This class is iPad-only. Using `BRJPopoverPicker` on an iPhone will result in an exception.
  */
-
 @interface BRJPopoverPicker : NSObject
+
 /**
  The object that acts as the delegate for the popover picker
  */
@@ -57,6 +57,7 @@
 
 /**
  Returns the title for row at the specified index in the picker
+ 
  @param index Zero-indexed row number
  @return The string used as the title for the row
  */
@@ -64,6 +65,7 @@
 
 /**
  Returns the number of rows in the picker
+ 
  @return The number of rows in the picker
  */
 - (NSUInteger)numberOfRows;
@@ -74,12 +76,14 @@
 
 /**
  Selects and highlights the specified row. Calling this method does not cause a call to the delegate method `popoverPicker:didSelectRowWithTitle:atIndex:`. The picker will scroll the row at `index` to the top.
+ 
  @param index The index of the row to select and highlight
  */
 - (void)selectRowAtIndex:(NSUInteger)index;
 
 /**
  Returns the index of the picker's selected row
+ 
  @return The index of the selected row, or `NSNotFound` if the picker does not have a selected row
  */
 - (NSInteger)indexOfSelectedRow;
@@ -95,6 +99,7 @@
 
 /**
  Presents the popover picker from the specified location
+ 
  @param rect The rectangle from which to present the popover picker
  @param view The view which contains `rect`
  @param arrowDirections The allowed arrow directions of the popover
@@ -104,6 +109,7 @@
 
 /**
  Presents the popover picker from the specified point
+ 
  @param point The point from which to present the popover picker
  @param view The view which contains `point`
  @param arrowDirections The allowed arrow directions of the popover
@@ -113,6 +119,7 @@
 
 /**
  Presents the popover picker from the specified location
+ 
  @param item The bar button item from which to present the popover picker
  @param arrowDirections The allowed arrow directions of the popover
  @param animated Pass `YES` to animate the popover's presentation
@@ -125,6 +132,7 @@
 
 /**
  Dismisses the popover picker
+ 
  @param animated Animates the dismissal if YES
  */
 - (void)dismissPopoverPickerAnimated:(BOOL)animated;

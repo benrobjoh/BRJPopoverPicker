@@ -28,11 +28,11 @@
 /**
  Objects that wish to provide data to an instance of `BRJPopoverPicker` adopt the `BRJPopoverPickerDataSource` protocol. The data source provides the picker with the number of rows and the title for each row in the picker.
  */
-
 @protocol BRJPopoverPickerDataSource <NSObject>
 @required
 /**
  Asks the data source to return the title for a row in the picker
+ 
  @param popoverPicker The popover requesting the title
  @param index The location in the picker for the requested title
  @return The title for the row at the specified index
@@ -41,6 +41,7 @@
 
 /**
  Asks the data source for the number of rows to display in the picker
+ 
  @param popoverPicker The popover requesting to know how many rows to display
  @return The number of rows
  */

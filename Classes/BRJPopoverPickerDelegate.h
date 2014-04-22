@@ -32,6 +32,7 @@
 @optional
 /**
  Informs the delegate that a particular row is selected
+ 
  @param popoverPicker The picker where the selection occurred
  @param selectedTitle The title for the selected row
  @param selectedIndex The index of the selected row
@@ -40,14 +41,17 @@
 
 /**
  Queries the delegate to see if the user is allowed to select a row. The popover picker does not call this method in response to programmatic calls to select a row.
+ 
  @param popoverPicker The picker that wants to select a particular row
  @param title The title for the row that may become selected
  @param index The index of the row that may become selected
+ @return YES if the user is allowed to select the row at `index`
  */
 - (BOOL)popoverPicker:(BRJPopoverPicker *)popoverPicker canSelectRowWithTitle:(NSString *)title atIndex:(NSUInteger)index;
 
 /**
  Returns the desired size for the popover picker
+ 
  @param popoverPicker The picker whose size is being requested
  @return The content size for `popoverPicker`
  */
