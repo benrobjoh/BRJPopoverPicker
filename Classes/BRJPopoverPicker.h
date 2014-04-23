@@ -75,7 +75,7 @@
  */
 
 /**
- Selects and highlights the specified row. Calling this method does not cause a call to the delegate method `popoverPicker:didSelectRowWithTitle:atIndex:`. The picker will scroll the row at `index` to the top.
+ Selects and highlights the specified row. Calling this method does not cause a call to the delegate method `popoverPicker:didSelectRowWithTitle:atIndex:`. The picker will scroll the row at `index` to the top. This method will have no effect if the index is beyond the range of the picker's rows.
  
  @param index The index of the row to select and highlight
  */

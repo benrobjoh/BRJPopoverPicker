@@ -84,9 +84,11 @@ static NSString * const BRJPopoverPickerCellReuseIdentifier = @"BRJPopoverPicker
 
 #pragma mark - Process Selection
 - (void)selectRowAtIndex:(NSUInteger)index {
-    self.selectedIndex = index;
-    
-    [self processRowSelection];
+    if ([self.tableViewController.tableView numberOfRowsInSection:0] > index) {
+        self.selectedIndex = index;
+        
+        [self processRowSelection];
+    }
 }
 
 - (NSInteger)indexOfSelectedRow {
